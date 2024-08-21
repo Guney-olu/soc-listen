@@ -17,7 +17,7 @@ output  =  fetch(subreddit, proxy)
 
 from vdb_save import load_json_file,add_documents_to_vector_store
 
-json_file_path = '/Users/aryanrajpurohit/stream/soc-listen/data.json' 
+json_file_path = './soc-listen/data.json' 
 json_data = load_json_file(json_file_path)
 
 add_documents_to_vector_store(json_data, vector_store)
